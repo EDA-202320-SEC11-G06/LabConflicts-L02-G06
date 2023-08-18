@@ -34,7 +34,7 @@ The students edit this section to add their names, Uniandes emails, and specify 
 
 1. student 1. Felipe Gonzalez fa.gonzalezv1@uniandes.edu.co
 2. student 2. Karen Quevedo k.quevedol@uniandes.edu.co
-1. Student No. 3 Name, Student No. 3 Uniandes Email, Student No. 3 owned functionality.
+1. sstudent 3. Santiago Serrano s.serranop2@uniandes.edu.co
 
 [Back to top](#sample-conflicts)
 
