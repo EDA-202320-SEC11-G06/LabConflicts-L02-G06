@@ -117,30 +117,31 @@ def addBookTag(catalog, booktag):
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
     lt.addLast(catalog["book_tags"], booktag)
     return catalog
+    pass
 
 
 # Funciones de consulta
 
 def bookSize(catalog):
     # TODO Mods de Est-3 en el Lab 2
-    return lt.size(catalog["books"])
+    pass
 
 
 def tagSize(catalog):
     # TODO Mods de Est-3 en el Lab 2
-    return lt.size(catalog["tags"])
+    pass
 
 
 def bookTagSize(catalog):
     # TODO Mods de Est-3 en el Lab 2
-    return lt.size(catalog["book_tags"])
+    pass
 
 
 def firstBook(catalog):
     # TODO Mods de Est-3 en el Lab 2
-    return lt.firstElement(catalog["books"])
+    pass
 
 
 def lastBook(catalog):
     # TODO Mods de Est-3 en el Lab 2
-    return lt.lastElement(["books"])
+    pass

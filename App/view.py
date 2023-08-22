@@ -49,8 +49,7 @@ def printMenu():
     print("Opciones:")
     print("1- Cargar Libros")
     print("2- Cargar Tags")
-    # TODO: Mods de Est-1 en el Lab 2, agregar opcion 3
-    print("3- cargar Book-Tags!!!...")
+    print("3- Cargar Tags de Libros")
     print("0- Salir")
 
 
@@ -77,13 +76,10 @@ def loadBooksTags(control):
     Cargar los Tags de libros
     """
     # TODO: Mods de Est-1 en el Lab 2
-    booktagfile = os.path.join(cf.data_dir, filename)
-    catalog = control["model"]
-    input_file = csv.Dictreader(open(booktagfile, encoding = "utf-8"))
-    catalog = model.createBookTagList(catalog)
-    for booktag in input_file:
-        model.addBookTag(catalog)
-    return model.bookTagSize(catalog)
+    booktags = controller.loadBooksTags(control,
+                                         "GoodReads/book_tags-small.csv")
+    return booktags
+    pass
 
 
 def firstBook(control):
@@ -91,7 +87,10 @@ def firstBook(control):
     Devuelve el primer libro del catalogo
     """
     # TODO: Mods de Est-1 en el Lab 2
-    return model.firstBook(control["model"])
+    first = firstBook(control)
+    print("Primer libro cargado:\n" + str(first) + "\n")
+    return first
+    pass
 
 
 def lastBook(control):
@@ -99,7 +98,7 @@ def lastBook(control):
     """
     Devuelve el último libro cargado
     """
-    return model.lastBook(control["model"])
+    pass
 
 
 # Se crea el controlador asociado a la vista
@@ -134,10 +133,7 @@ if __name__ == "__main__":
 
         elif int(inputs[0]) == 3:
             # TODO: Mods de Est-3 en el Lab 2
-            print("Cargando informacion de Book-Tags...")
-            booktags = loadBooksTags(control)
-            print("Total de Book-Tags: " + str(booktags))
-            
+            pass
 
         elif int(inputs[0]) == 0:
             working = False
