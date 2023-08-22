@@ -66,7 +66,7 @@ def addBooks(catalog, booksfile):
     Cada linea del archivo quedará en una posicion de la lista.
     """
     catalog["books"] = lt.newList(datastructure="SINGLE_LINKED",
-                                  filename=booksfile)
+                                  filename=booksfile)  
     return catalog
 
 
