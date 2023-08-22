@@ -49,7 +49,8 @@ def printMenu():
     print("Opciones:")
     print("1- Cargar Libros")
     print("2- Cargar Tags")
-    print("3- Cargar Tags de Libros")
+    # TODO: Mods de Est-1 en el Lab 2, agregar opcion 3
+    print("3- Cargar los Tags de libros")
     print("0- Salir")
 
 
@@ -76,9 +77,6 @@ def loadBooksTags(control):
     Cargar los Tags de libros
     """
     # TODO: Mods de Est-1 en el Lab 2
-    booktags = controller.loadBooksTags(control,
-                                         "GoodReads/book_tags-small.csv")
-    return booktags
     pass
 
 
@@ -87,9 +85,6 @@ def firstBook(control):
     Devuelve el primer libro del catalogo
     """
     # TODO: Mods de Est-1 en el Lab 2
-    first = firstBook(control)
-    print("Primer libro cargado:\n" + str(first) + "\n")
-    return first
     pass
 
 
